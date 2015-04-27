@@ -18,6 +18,8 @@
  * @copyright (C) 2015 Sindastra <sindastra@gmail.com>
  */
 
+header('Content-Type: text/plain');
+
 if($_GET['i'])
 	if( ctype_alnum($_GET['i']) )
 		$id = $_GET['i'];
@@ -26,5 +28,3 @@ if(!file_exists('pastes/' . $id))
 	die('Paste does not exist.');
 
 echo gzuncompress( file_get_contents('pastes/' . $id) );
-
-header('Content-Type: text/plain');
