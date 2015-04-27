@@ -18,7 +18,7 @@
  * @copyright (C) 2015 Sindastra <sindastra@gmail.com>
  */
 
-if($_POST['code'])
+if($_POST['code'] && ($_POST['sb'] == '') )
 	$code = gzcompress($_POST['code'], 9);
 else
 	die('No or incorrect data received.');
