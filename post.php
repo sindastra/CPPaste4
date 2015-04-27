@@ -27,4 +27,4 @@ $id = uniqid();
 
 file_put_contents( 'pastes/' . $id , $code );
 
-header('location:view.php?i=' . $id);
+header('location:v/' . $id);

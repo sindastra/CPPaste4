@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^v/([a-z0-9]+) view.php?i=$1 [NC,L]
