@@ -19,7 +19,7 @@
  */
 
 if($_POST['code'])
-	$code = htmlentities($_POST['code']);
+	$code = gzcompress($_POST['code'], 9);
 else
 	die('No or incorrect data received.');
 

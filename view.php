@@ -19,6 +19,9 @@
  */
 
 if($_GET['i'])
-	$id = htmlentities($_GET['i']);
+	if( ctype_alnum($_GET['i']) )
+		$id = $_GET['i'];
 
-echo file_get_contents('pastes/' . $id);
+echo gzuncompress( file_get_contents('pastes/' . $id) );
+
+header('Content-Type: text/plain');
