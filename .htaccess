@@ -1,2 +1,3 @@
 RewriteEngine On
+RewriteRule ^v/([a-z0-9]+)/raw view.php?i=$1&raw=1 [NC]
 RewriteRule ^v/([a-z0-9]+) view.php?i=$1 [NC,L]
