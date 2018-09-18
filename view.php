@@ -1,7 +1,7 @@
 <?php
 /**
  * CPPaste4
- * Copyright (C) 2015 - 2018 Sindastra <sindastra@gmail.com>
+ * Copyright (C) 2015 Sindastra <sindastra@gmail.com>
  *
  * The above copyright notice shall be included in
  * all copies or substantial portions of the Software.
@@ -53,7 +53,7 @@ else
 	echo '<meta charset="utf-8">';
 	echo '<title>' . $pasteTimeHuman . '</title>';
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-	echo '<style>body{background:#020;font-size:11.5px;}</style>';
+	echo '<link rel="stylesheet" type="text/css" href="/style.css">';
 	echo '</head><body>';
 	echo hilight_code( gzuncompress( file_get_contents('pastes/' . $id) ) );
 	echo '</body></html>';
