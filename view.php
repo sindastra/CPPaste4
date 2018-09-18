@@ -1,7 +1,7 @@
 <?php
 /**
  * CPPaste4
- * Copyright (C) 2015 Sindastra <sindastra@gmail.com>
+ * Copyright (C) 2015 - 2018 Sindastra <sindastra@gmail.com>
  *
  * The above copyright notice shall be included in
  * all copies or substantial portions of the Software.
@@ -40,7 +40,7 @@ if($_GET['i'])
 if(!file_exists('pastes/' . $id))
 	die('Paste does not exist.');
 
-if($_GET['raw'])
+if(isset($_GET['raw']))
 {
 	header('Content-Type: text/plain');
 	echo gzuncompress( file_get_contents('pastes/' . $id) );
