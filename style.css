@@ -8,7 +8,7 @@ body {
 	background-color:#020;
 	background-image:url("scan.png");
 	color:white;
-	font-family:courier;
+	font-family:monospace;
 }
 
 #code {
@@ -17,14 +17,14 @@ body {
 	width:100%;
 	height:500px;
 	height:95vh;
-	font-family:courier;
+	font-family:monospace;
 	border:none;
 	outline:0;
 	tab-size:4;
 }
 
 #submit {
-	font-family:courier;
+	font-family:monospace;
 	border:1px solid lime;
 	background:black;
 	color:lime;
