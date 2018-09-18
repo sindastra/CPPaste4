@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /view.php
+Disallow: /post.php
+Disallow: /style.css
+Disallow: /LICENSE
+Disallow: /README.md
+Disallow: /scan.png
+
