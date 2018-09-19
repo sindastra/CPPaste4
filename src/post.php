@@ -34,6 +34,6 @@ if($success === false)
 	die('Error while storing paste! Go back with your browser.');
 
 if($conf['PrettyRewrite'] === true)
-	header('location:v/' . $id . '/');
+	header('location:v/' . $id);
 else
-	header('location:view.php?i=' . $id );
+	header('location:view.php?i=' . $id);
