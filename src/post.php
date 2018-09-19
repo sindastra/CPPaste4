@@ -1,21 +1,17 @@
 <?php
 /**
  * CPPaste4
- * Copyright (C) 2015 Sindastra <sindastra@gmail.com>
  *
- * The above copyright notice shall be included in
- * all copies or substantial portions of the Software.
+ * Copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+ * All rights reserved.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * The above copyright notice and this notice shall be included in all
+ * copies or substantial portions of the Software.
  *
- * @author Sindastra <sindastra@gmail.com>
- * @copyright (C) 2015 Sindastra <sindastra@gmail.com>
+ * See LICENSE file for more info.
+ *
+ * @author Sindastra <https://github.com/sindastra>
+ * @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
  */
 
 if($_POST['code'] && ($_POST['sb'] == '') )
