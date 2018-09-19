@@ -29,18 +29,31 @@ function hilight_code($string)
 	return str_replace(array_keys($swapColors), $swapColors, $highlighted);
 }
 
+function get_paste_contents($i)
+{
+	global $legal;
+	if($legal === true)
+		return file_get_contents('legal/' . $i . '.txt');
+	else
+		return gzuncompress( file_get_contents('pastes/' . $i) );
+}
+
 if( isset($_GET['i']) && ctype_alnum($_GET['i']) )
 	$id = $_GET['i'];
 else
 	die('No (or invalid) ID received!');
 
-if(!file_exists('pastes/' . $id))
+$legal = false;
+if($id == 'terms' || $id == 'privacy' || $id == 'contact')
+	$legal = true;
+
+if($legal === false && !file_exists('pastes/' . $id))
 	die('Paste does not exist.');
 
 if(isset($_GET['raw']))
 {
 	header('Content-Type: text/plain');
-	echo gzuncompress( file_get_contents('pastes/' . $id) );
+	echo gzuncompress( get_paste_contents($id) );
 }
 else
 {
@@ -52,6 +65,6 @@ else
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 	echo '<link rel="stylesheet" type="text/css" href="/style.css">';
 	echo '</head><body>';
-	echo hilight_code( gzuncompress( file_get_contents('pastes/' . $id) ) );
+	echo hilight_code( get_paste_contents($id) );
 	echo '</body></html>';
 }
