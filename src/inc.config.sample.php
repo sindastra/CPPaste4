@@ -18,5 +18,10 @@
 // this file by removing the '.sample'!
 
 $conf = array(
-	'PrettyRewrite' => false
+	'PrettyRewrite' => false,
+	'reCAPTCHA' => array(
+		// If no keys are specified, reCAPTCHA is not used!
+		'SiteKey' => '',
+		'SecretKey' => ''
+	)
 );
