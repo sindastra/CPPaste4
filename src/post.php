@@ -14,6 +14,11 @@
  * @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
  */
 
+if(file_exists('inc.config.php'))
+	include('inc.config.php');
+else
+	include('inc.config.sample.php');
+
 if(isset($_POST['code']) && isset($_POST['sb']))
 	if(!empty(trim($_POST['code'])) && ($_POST['sb'] === ''))
 		$code = gzcompress($_POST['code'], 9);
@@ -28,4 +33,7 @@ $success = file_put_contents( 'pastes/' . $id , $code );
 if($success === false)
 	die('Error while storing paste! Go back with your browser.');
 
-header('location:v/' . $id . '/');
+if($conf['PrettyRewrite'] === true)
+	header('location:v/' . $id . '/');
+else
+	header('location:view.php?i=' . $id );
