@@ -3,4 +3,7 @@ RewriteEngine On
 RewriteRule ^v/(.*)/raw view.php?i=$1&raw=1 [NC,L]
 RewriteRule ^v/(.*)/ view.php?i=$1 [NC,L]
 RewriteRule ^v/(.*) view.php?i=$1 [NC,L]
+RewriteRule ^(terms) view.php?i=$1 [NC,L]
+RewriteRule ^(contact) view.php?i=$1 [NC,L]
+RewriteRule ^(privacy) view.php?i=$1 [NC,L]
 </IfModule>
