@@ -29,9 +29,10 @@ function hilight_code($string)
 	return str_replace(array_keys($swapColors), $swapColors, $highlighted);
 }
 
-if($_GET['i'])
-	if( ctype_alnum($_GET['i']) )
-		$id = $_GET['i'];
+if( isset($_GET['i']) && ctype_alnum($_GET['i']) )
+	$id = $_GET['i'];
+else
+	die('No (or invalid) ID received!');
 
 if(!file_exists('pastes/' . $id))
 	die('Paste does not exist.');
