@@ -20,7 +20,9 @@ if(isset($_POST['code']) && isset($_POST['sb']))
 	else
 		die('No (or incorrect) data received!');
 
-$id = uniqid();
+do {
+	$id = uniqid();
+} while(file_exists('pastes/'.$id));
 
 $success = file_put_contents( 'pastes/' . $id , $code );
 if($success === false)
