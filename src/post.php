@@ -18,7 +18,7 @@ if(isset($_POST['code']) && isset($_POST['sb']))
 	if(!empty(trim($_POST['code'])) && ($_POST['sb'] === ''))
 		$code = gzcompress($_POST['code'], 9);
 	else
-		die('No or incorrect data received.');
+		die('No (or incorrect) data received!');
 
 $id = uniqid();
 
