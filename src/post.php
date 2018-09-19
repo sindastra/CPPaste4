@@ -22,6 +22,8 @@ if(isset($_POST['code']) && isset($_POST['sb']))
 
 $id = uniqid();
 
-file_put_contents( 'pastes/' . $id , $code );
+$success = file_put_contents( 'pastes/' . $id , $code );
+if($success === false)
+	die('Error while storing paste! Go back with your browser.');
 
 header('location:v/' . $id . '/');
