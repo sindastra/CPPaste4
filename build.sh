@@ -16,13 +16,27 @@
 
 mkdir -p snapshots
 
-git diff --cached --exit-code
-STATUS=$?
+git diff --exit-code
+SSTATUS=$?
+if [ ${SSTATUS} -eq 1 ]; then
+	echo 'WORKING DIRECTORY CONTAINS **UNSTAGED** CHANGES!'
+	echo 'Bailing out...'
+	exit 1
+fi
 
-if [ ${STATUS} -eq 1 ]; then
-	echo 'WORKING DIRECTORY CONTAINS UNCOMMITED CHANGES!'
-	echo 'NOT MAKING DIRTY BUILDS! Bailing out...'
-else
+git diff --cached --exit-code
+CSTATUS=$?
+if [ ${CSTATUS} -eq 1 ]; then
+	echo 'WORKING DIRECTORY CONTAINS **UNCOMMITED** CHANGES!'
+	echo 'Bailing out...'
+	exit 1
+fi
+
+if [ -n "$(git status --porcelain)" ]; then
+	echo 'WORKING DIRECTORY **NOT** CLEAN!'
+	echo 'Bailing out...'
+	exit 1
+fi
 
 DATE=`date -u +%Y-%m-%d-%H%M%S`
 BRANCH=`git rev-parse --abbrev-ref HEAD`
@@ -33,5 +47,3 @@ cp -rT src ${SNAPSHOTNAME}
 java -jar toolchain/yuic*.jar src/style.css > ${SNAPSHOTNAME}/style.css
 tar cvzf "snapshots/${SNAPSHOTNAME}.tgz" ${SNAPSHOTNAME}
 rm -rf ${SNAPSHOTNAME}
-
-fi
