@@ -14,10 +14,7 @@
  * @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
  */
 
-if(file_exists('inc.config.php'))
-	include('inc.config.php');
-else
-	include('inc.config.sample.php');
+include('confighandler.php');
 
 if(isset($_POST['code']) && isset($_POST['sb']))
 	if(!empty(trim($_POST['code'])) && ($_POST['sb'] === ''))
