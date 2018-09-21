@@ -20,6 +20,7 @@ body {
 	color:lime;
 	font-family:monospace;
 	caret-color:lime;
+	text-shadow:lime 0 0 6px;
 }
 
 #code {
@@ -33,6 +34,7 @@ body {
 	border:none;
 	outline:0;
 	tab-size:4;
+	text-shadow:lime 0 0 6px;
 }
 
 #submit {
