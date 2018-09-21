@@ -23,7 +23,7 @@ body {
 	text-shadow:lime 0 0 6px;
 }
 
-code, #code {
+a, code, #code {
 	background-color:transparent;
 	color:lime;
 	caret-color:lime;
