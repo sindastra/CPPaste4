@@ -53,7 +53,7 @@ if($legal === false && !file_exists('pastes/' . $id))
 if(isset($_GET['raw']))
 {
 	header('Content-Type: text/plain');
-	echo gzuncompress( get_paste_contents($id) );
+	echo get_paste_contents($id);
 }
 else
 {
