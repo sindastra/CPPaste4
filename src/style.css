@@ -23,7 +23,7 @@ body {
 	text-shadow:lime 0 0 6px;
 }
 
-a, code, #code {
+code, #code {
 	background-color:transparent;
 	color:lime;
 	caret-color:lime;
@@ -50,6 +50,11 @@ a, code, #code {
 	bottom:5px;
 	left:2.5%;
 	font-size:12px;
+}
+
+a, a:hover, a:visited {
+	color:lime;
+	text-decoration: none;
 }
 
 #submit:hover {
