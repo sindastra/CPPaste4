@@ -60,3 +60,29 @@ a, a:hover, a:visited {
 #submit:hover {
 	background:#003;
 }
+
+nav ul, .nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+nav ul li, .nav ul li {
+	display: inline-block;
+}
+nav, .nav {
+	margin:auto;
+	text-align: center;
+	bottom:0px;
+}
+#nav-main {
+	padding:0;
+	position:absolute;
+	margin-top:0;
+	margin-right:5px;
+	top:0;
+	right:5px;
+	text-align:right;
+	color:rgba(50,205,50,0.5);
+}
+#nav-main a{
+	color:rgba(50,205,50,0.5);
+}

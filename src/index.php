@@ -1,3 +1,22 @@
+<?php
+/**
+ * CPPaste4
+ *
+ * Copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+ * All rights reserved.
+ *
+ * The above copyright notice and this notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * See LICENSE file for more info.
+ *
+ * @author Sindastra <https://github.com/sindastra>
+ * @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+ */
+
+include('confighandler.php');
+
+?>
 <!doctype html>
 <html>
 	<head>
@@ -13,5 +32,22 @@
 			<br />
 			<button id="submit" type="submit">Paste!</button>
 		</form>
+		<nav role="navigation" class="nav">
+			<ul id="nav-main">
+			<?php if($conf['PrettyRewrite'] === true): ?>
+				<li><a href="/terms">Terms</a></li>
+				<li> - </li>
+				<li><a href="/privacy">Privacy</a></li>
+				<li> - </li>
+				<li><a href="/contact">Contact</a></li>
+			<?php else: ?>
+				<li><a href="view.php?i=terms">Terms</a></li>
+				<li> - </li>
+				<li><a href="view.php?i=privacy">Privacy</a></li>
+				<li> - </li>
+				<li><a href="view.php?i=contact">Contact</a></li>
+			<?php endif; ?>
+			</ul>
+		</nav>
 	</body>
 </html>
