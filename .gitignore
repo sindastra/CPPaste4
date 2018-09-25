@@ -1,3 +1,4 @@
+.DS_Store
 src/inc.config.php
 toolchain/*
 snapshots/*
