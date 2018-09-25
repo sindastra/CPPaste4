@@ -35,7 +35,10 @@ code, #code {
 	outline:0;
 	tab-size:4;
 	text-shadow:lime 0 0 6px;
-	white-space: nowrap;
+}
+
+code {
+	white-space:nowrap;
 }
 
 #submit {
