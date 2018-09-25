@@ -1,6 +1,6 @@
 # CPPaste4
 
-**CPPaste4** is a minimalistic web-app used to store and share code pastes!
+**CPPaste4** is a minimalistic web-app used to store and share code pastes! It supports IE8!
 
 The name is derived from **CPP** (**C++**) and **Paste**!
 
