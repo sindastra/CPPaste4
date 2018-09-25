@@ -17,7 +17,7 @@
 include('confighandler.php');
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>CPPaste4</title>

@@ -59,7 +59,7 @@ else
 {
 	$pasteTimestamp = hexdec(substr($id, 0, -5));
 	$pasteTimeHuman = date('r', $pasteTimestamp);
-	echo '<!doctype html><html><head>';
+	echo '<!DOCTYPE html><html><head>';
 	echo '<meta charset="utf-8">';
 	echo '<title>' . $pasteTimeHuman . '</title>';
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
