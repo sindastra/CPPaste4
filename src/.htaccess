@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
+Options +SymLinksIfOwnerMatch
 RewriteEngine On
 RewriteRule ^v/(.*)/raw view.php?i=$1&raw=1 [NC,L]
 RewriteRule ^v/(.*)/ view.php?i=$1 [NC,L]
