@@ -1,6 +1,6 @@
 CPPaste4
 
-Copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+Copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
 All rights reserved.
 
 The above copyright notice and this notice shall be included in all
