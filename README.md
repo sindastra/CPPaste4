@@ -1,3 +1,4 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W215OZB)
 # CPPaste4
 
 **CPPaste4** is a minimalistic web-app used to store and share code pastes! It supports all modern browsers but also a bunch of old ones, down to IE8! It also runs on IE6 but that's not officially supported... IE8 is supported for fun. You should not be using IE8 in 2019... really.
