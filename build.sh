@@ -41,7 +41,7 @@ BRANCH=`git rev-parse --abbrev-ref HEAD`
 PRETTYHASH=`git log --pretty=format:'%h' -n 1`
 SNAPSHOTNAME="CPPaste4-SNAPSHOT-${DATE}UTC-${BRANCH}-${PRETTYHASH}"
 
-cp -rT src ${SNAPSHOTNAME}
-java -jar toolchain/yuic*.jar src/style.css > ${SNAPSHOTNAME}/style.css
+cp -rT src/www ${SNAPSHOTNAME}
+java -jar toolchain/yuic*.jar src/www/style.css > ${SNAPSHOTNAME}/style.css
 tar cvzf "snapshots/${SNAPSHOTNAME}.tgz" ${SNAPSHOTNAME}
 rm -rf ${SNAPSHOTNAME}
