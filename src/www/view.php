@@ -35,7 +35,14 @@ function get_paste_contents($i)
 {
 	global $legal;
 	if($legal === true)
-		return file_get_contents('legal/' . $i . '.txt');
+	{
+		$legalFile = 'legal/' . $i . '.txt';
+
+		if( !file_exists($legalFile) )
+			return "Note to webmaster: Please create $legalFile (newly or by renaming the .tpl file)";
+		else
+			return file_get_contents($legalFile);
+	}
 	else
 		return gzuncompress( file_get_contents('pastes/' . $i) );
 }
