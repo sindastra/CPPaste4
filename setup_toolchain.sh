@@ -10,7 +10,7 @@
 # See LICENSE file for more info.
 #
 # @author Sindastra <https://github.com/sindastra>
-# @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+# @copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
 
 # Set up yuicompressor
 if [ -f "toolchain/yuicompressor-2.4.8.jar" ]; then
