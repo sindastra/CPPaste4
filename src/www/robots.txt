@@ -5,3 +5,4 @@ Disallow: /style.css
 Disallow: /LICENSE
 Disallow: /README.md
 Disallow: /scan.png
+Disallow: /LICENSE.txt
