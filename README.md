@@ -13,3 +13,12 @@ All rights reserved.
 Don't forget to take a look at the [LICENSE](LICENSE.md)!
 
 You might be interested in the [releases page](https://github.com/sindastra/CPPaste4/releases).
+
+
+# Installation
+
+Basically, publish the contents of src/www to your webhost.
+
+Make sure to rename ```inc.config.sample.php``` to ```inc.config.sample.php``` and edit it accordingly.
+
+Make sure to rename the ```legal/*.tpl.txt``` to ```legal/*.txt``` and edit them accordingly.
