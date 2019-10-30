@@ -53,5 +53,8 @@ include('confighandler.php');
 			<?php endif; ?>
 			</ul>
 		</nav>
+		<?php if(!empty($conf['trackingPixel'])): ?>
+		<img src="<?php echo $conf['trackingPixel'] ?>" height="1" width="1" border="0" style="border:0" alt="" />
+		<?php endif; ?>
 	</body>
 </html>

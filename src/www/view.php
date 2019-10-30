@@ -14,6 +14,8 @@
  * @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
  */
 
+include('confighandler.php');
+
 function hilight_code($string)
 {
 	$swapColors = array(
@@ -66,5 +68,7 @@ else
 	echo '<link rel="stylesheet" type="text/css" href="/style.css">';
 	echo '</head><body>';
 	echo hilight_code( get_paste_contents($id) );
+	if(!empty($conf['trackingPixel']))
+		echo '<img src="' . $conf['trackingPixel'] . '" height="1" width="1" border="0" style="border:0" alt="" />';
 	echo '</body></html>';
 }
