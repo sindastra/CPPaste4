@@ -1,3 +1,15 @@
 PRIVACY POLICY
 
-<privacy policy should be here>
+<THIS IS A SAMPLE PRIVACY POLICY THAT NEEDS TO BE EXTENDED AND ADAPTED>
+
+1. User submitted info
+    Everything you submit will (unless stated otherwise) be stored indefinitely.
+    This may or may not include backups.
+
+2. Tracking
+    This software uses tracking pixels.
+    <STATE HERE WHETHER YOU HAVE TRACKING PIXELS ENABLED>
+
+3. Google's reCAPTCHA
+    This software uses Google's reCAPTCHA.
+    <STATE HERE WHETHER YOU HAVE GOOGLE RECPATCHA ENABLED>

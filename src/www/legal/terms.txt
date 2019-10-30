@@ -1,3 +1,25 @@
-TERMS
+TERMS AND CONDITIONS
 
-<terms should be here>
+<THIS IS A SAMPLE T&C THAT NEEDS TO BE EXTENDED AND ADAPTED>
+
+This service is provided in good faith and for free.
+It may go down any time without prior announcement.
+
+By submitting a post, you grant us the right to host,
+and redistribute the contents of said post.
+
+# DISCLAIMER
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE to the extent permitted by law.
+
+# Severability
+    If a provision of this Agreement is or becomes illegal, invalid or unenforceable in any jurisdiction,
+    that shall not affect:
+
+        the validity or enforceability in that jurisdiction of any other provision of this Agreement; or
+        the validity or enforceability in other jurisdictions of that or any other provision of this Agreement.
