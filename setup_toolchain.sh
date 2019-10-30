@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # CPPaste4
-# Copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+# Copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
 # All rights reserved.
 #
 # The above copyright notice and this notice shall be included in all
@@ -12,9 +12,14 @@
 # @author Sindastra <https://github.com/sindastra>
 # @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
 
-mkdir -p toolchain
-cd toolchain
-rm *.zip *.jar
-wget https://github.com/yui/yuicompressor/releases/download/v2.4.8/yuicompressor-2.4.8.zip
-unzip *.zip
-rm *.zip
+# Set up yuicompressor
+if [ -f "toolchain/yuicompressor-2.4.8.jar" ]; then
+    echo yuicompressor already downloaded
+else
+    cd toolchain
+    if [ ! -f yuicompressor-2.4.8.zip ]; then
+        wget https://github.com/yui/yuicompressor/releases/download/v2.4.8/yuicompressor-2.4.8.zip
+    fi
+    unzip yuicompressor-2.4.8.zip
+    rm -f yuicompressor-2.4.8.zip
+fi
