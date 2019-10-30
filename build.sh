@@ -12,7 +12,7 @@
 # @author Sindastra <https://github.com/sindastra>
 # @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
 
-mkdir -p snapshots
+./setup_toolchain.sh
 
 git diff --exit-code
 SSTATUS=$?
