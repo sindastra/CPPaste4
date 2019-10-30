@@ -23,6 +23,21 @@ Make sure to rename ```inc.config.sample.php``` to ```inc.config.sample.php``` a
 
 Make sure to rename the ```legal/*.tpl.txt``` to ```legal/*.txt``` and edit them accordingly.
 
+# Note on security and Apache2 deployment
+
+You'll want to set some headers and settings, make sure to always serve over HTTPS only.
+
+Apache2 VirtualHost config (append) for TLS/SSL enabled site:
+```
+SSLCipherSuite HIGH:!aNULL:!MD5
+SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload;"
+Header always set X-Content-Type-Options: nosniff
+Header always set X-XSS-Protection: 1
+Header always set X-Frame-Options: deny
+Header always set Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';"
+```
+
 # Legal
 
 Copyright (c) 2015 - 2019 [Sindastra](https://github.com/sindastra)
