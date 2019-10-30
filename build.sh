@@ -14,6 +14,17 @@
 
 ./setup_toolchain.sh
 
+command -v git
+if [ $? != "0" ]; then
+	echo 'FATAL: git not installed'
+	exit 1
+fi
+command -v java
+if [ $? != "0" ]; then
+	echo 'FATAL: java not installed'
+	exit 1
+fi
+
 git diff --exit-code
 SSTATUS=$?
 if [ ${SSTATUS} -eq 1 ]; then
