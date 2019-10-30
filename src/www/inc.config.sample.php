@@ -19,7 +19,7 @@
 
 $conf = array(
 	'PrettyRewrite' => false,
-	'trackingPixel' = '', // OPTIONAL URL to tracking pixel image
+	'trackingPixel' => '', // OPTIONAL URL to tracking pixel image
 	'reCAPTCHA' => array(
 		// If no keys are specified, reCAPTCHA is not used!
 		'SiteKey' => '',
