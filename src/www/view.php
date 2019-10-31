@@ -76,6 +76,6 @@ else
 	echo '</head><body>';
 	echo hilight_code( get_paste_contents($id) );
 	if(!empty($conf['trackingPixel']))
-		echo '<img src="' . $conf['trackingPixel'] . '" height="1" width="1" border="0" style="border:0" alt="" />';
+		echo '<img class="borderless" src="' . $conf['trackingPixel'] . '" height="1" width="1" border="0" alt="" />';
 	echo '</body></html>';
 }

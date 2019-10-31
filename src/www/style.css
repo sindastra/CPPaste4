@@ -93,3 +93,11 @@ nav, .nav {
 textarea {
 	overflow:auto;
 }
+
+.borderless {
+	border: none;
+}
+
+.sb {
+	display: none;
+}

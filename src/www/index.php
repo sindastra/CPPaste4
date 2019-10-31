@@ -32,7 +32,7 @@ include('confighandler.php');
 	<body>
 		<form method="post" action="post.php">
 			<textarea id="code" name="code" autofocus></textarea>
-			<input type="text" name="sb" style="display:none">
+			<input type="text" name="sb" class="sb">
 			<br />
 			<button id="submit" type="submit">Paste!</button>
 		</form>
@@ -54,7 +54,7 @@ include('confighandler.php');
 			</ul>
 		</nav>
 		<?php if(!empty($conf['trackingPixel'])): ?>
-		<img src="<?php echo $conf['trackingPixel'] ?>" height="1" width="1" border="0" style="border:0" alt="" />
+		<img class="borderless" src="<?php echo $conf['trackingPixel'] ?>" height="1" width="1" border="0" alt="" />
 		<?php endif; ?>
 	</body>
 </html>
