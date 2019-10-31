@@ -2,4 +2,5 @@
 src/inc.config.php
 toolchain/*
 snapshots/*
+src/www/pastes/*
 mountpoint.conf
