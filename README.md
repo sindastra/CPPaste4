@@ -1,13 +1,20 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W215OZB)
 # CPPaste4
 
-**CPPaste4** is a minimalistic web-app used to store and share code pastes. **Kind of like GitHub's Gists!**
+The name is derived from **CPP** (**C++**) and **Paste**! is a minimalistic web-app used to store and share code pastes. **Kind of like GitHub's Gists!**
 
-It supports all modern browsers but also a bunch of old ones, down to IE8! It also runs on IE6 but that's not officially supported... IE8 is supported for fun. But you should not be using IE8 in 2019... really.
+### Written in pure PHP with features including but not limited to:
 
-The name is derived from **CPP** (**C++**) and **Paste**!
+ - Honeypot to avoid spam
+ - Requiring no database server
+ - Saving pastes as compressed files
+ - No config needed (config optionally possible)
+ - No PHP dependencies (only core PHP required)
+ - No JavaScript
+ - Easy deployment to web server
+ - Wide range of browser support
 
-It's called version **4** as it's the fourth version I'm writing from scratch (each being completely different and with a different goal, this one to be minimalistic) and this version is the first to be open source! See the [Wiki](https://github.com/sindastra/CPPaste4/wiki) for more info.
+It supports all modern browsers but also a bunch of old ones, down to IE8! It also runs on IE6 but that's not officially supported... IE8 is supported for fun. But you should not be using IE8 in 2019... really. :wink:
 
 # Getting it
 
@@ -53,6 +60,12 @@ cd CPPaste4/src/www/
 php -S 127.0.0.1:8000
 ```
 And then navigate to http://localhost:8000/
+
+### Additional Info
+
+It's called version **4** as it's the fourth version I'm writing from scratch (each being completely different and with a different goal, this one to be minimalistic) and this version is the first to be open source! 
+
+See the [Wiki](https://github.com/sindastra/CPPaste4/wiki) for more info.
 
 # Legal
 
