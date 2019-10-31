@@ -31,7 +31,7 @@ Apache2 VirtualHost config (append) for TLS/SSL enabled site:
 ```
 SSLCipherSuite HIGH:!aNULL:!MD5
 SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
-Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload;"
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 Header always set X-Content-Type-Options: nosniff
 Header always set X-XSS-Protection: 1
 Header always set X-Frame-Options: deny
