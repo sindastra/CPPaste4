@@ -53,6 +53,8 @@ include('confighandler.php');
 				<li> - </li>
 				<li><a href="view.php?i=contact">Contact</a></li>
 			<?php endif; ?>
+				<li> - </li>
+				<li><a target="_blank" href="https://sindastra.github.io/CPPaste4/">Source Code</a></li>
 			</ul>
 		</nav>
 		<?php if(!empty($conf['trackingPixel'])): ?>
