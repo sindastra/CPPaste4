@@ -38,6 +38,22 @@ Header always set X-Frame-Options: deny
 Header always set Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';"
 ```
 
+# Quick testing for development
+
+On Debian based systems like Ubuntu:
+
+Make sure you have git and php-cli installed:
+```
+sudo apt install git php-cli
+```
+Then clone, navigate into the web-app directory and serve it with PHP:
+```
+git clone git://github.com/sindastra/CPPaste4.git
+cd CPPaste4/src/www/
+php -S 127.0.0.1:8000
+```
+And then navigate to http://localhost:8000/
+
 # Legal
 
 Copyright (c) 2015 - 2019 [Sindastra](https://github.com/sindastra)
