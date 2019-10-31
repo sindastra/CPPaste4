@@ -63,7 +63,7 @@ And then navigate to http://localhost:8000/
 
 ### Additional Info
 
-It's called version **4** as it's the fourth version I'm writing from scratch (each being completely different and with a different goal, this one to be minimalistic) and this version is the first to be open source! 
+It's called **CPPaste4** as it's the fourth version I'm writing from scratch (each being completely different and with a different goal, this one to be minimalistic) and this version is the first to be open source! 
 
 See the [Wiki](https://github.com/sindastra/CPPaste4/wiki) for more info.
 
