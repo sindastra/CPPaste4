@@ -5,12 +5,12 @@ if [ $? != "0" ]; then
     exit 1
 fi
 
-if [ ! -f mountpoint ]; then
+if [ ! -f mountpoint.conf ]; then
     echo "FATAL: file 'mountpoint' not found. Please create it with path as content."
     exit 1
 fi
 
-mountpoint=`cat mountpoint`
+mountpoint=`cat mountpoint.conf`
 if [ ! -d "${mountpoint}/" ]; then
     echo "FATAL: mount point path does not exist. Please check file 'mountpoint' and adjust path."
     exit 1
