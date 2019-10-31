@@ -68,14 +68,21 @@ else
 {
 	$pasteTimestamp = hexdec(substr($id, 0, -5));
 	$pasteTimeHuman = date('r', $pasteTimestamp);
-	echo '<!DOCTYPE html><html><head>';
-	echo '<meta charset="utf-8">';
-	echo '<title>' . $pasteTimeHuman . '</title>';
-	echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-	echo '<link rel="stylesheet" type="text/css" href="/style.css">';
-	echo '</head><body>';
-	echo hilight_code( get_paste_contents($id) );
-	if(!empty($conf['trackingPixel']))
-		echo '<img class="borderless" src="' . $conf['trackingPixel'] . '" height="1" width="1" border="0" alt="" />';
-	echo '</body></html>';
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title><?php echo $pasteTimeHuman; ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/style.css">
+	</head>
+	<body>
+<?php echo hilight_code( get_paste_contents($id) ); // Keep this to the left to avoid spaces ?>
+	<?php if(!empty($conf['trackingPixel'])): ?>
+		<img class="borderless" src="<?php echo $conf['trackingPixel']; ?>" height="1" width="1" border="0" alt="" />
+	<?php endif; ?>
+	</body>
+</html>
+<?php
 }
