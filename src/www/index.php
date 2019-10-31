@@ -25,9 +25,11 @@ include('confighandler.php');
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<!-- Internet Explorer HTML5 hack - Make it aware of the nav tag: -->
+		<!--[if IE]>
 		<script>
 			document.createElement('nav');
 		</script>
+		<![endif]-->
 	</head>
 	<body>
 		<form method="post" action="post.php">
