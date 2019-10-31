@@ -16,21 +16,6 @@
 
 include('confighandler.php');
 
-function hilight_code($string)
-{
-	$swapColors = array(
-			'<span style="color: #000000">' => '<span style="color: #0f0">',
-			'<span style="color: #DD0000">' => '<span style="color: #ff0">',
-			'<span style="color: #007700">' => '<span style="color: #58f">',
-			'<span style="color: #0000BB">' => '<span style="color: #fff">',
-			'<span style="color: #FF8000">' => '<span style="color: #ccc">'
-		);
-
-	$highlighted = highlight_string($string, true);
-
-	return str_replace(array_keys($swapColors), $swapColors, $highlighted);
-}
-
 function get_paste_contents($i)
 {
 	global $legal;
@@ -74,7 +59,7 @@ else
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 	echo '<link rel="stylesheet" type="text/css" href="/style.css">';
 	echo '</head><body>';
-	echo hilight_code( get_paste_contents($id) );
+	echo get_paste_contents($id);
 	if(!empty($conf['trackingPixel']))
 		echo '<img class="borderless" src="' . $conf['trackingPixel'] . '" height="1" width="1" border="0" alt="" />';
 	echo '</body></html>';
