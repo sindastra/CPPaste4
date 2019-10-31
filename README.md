@@ -59,7 +59,7 @@ git clone git://github.com/sindastra/CPPaste4.git
 cd CPPaste4/src/www/
 php -S 127.0.0.1:8000
 ```
-And then navigate to http://localhost:8000/
+And then navigate to <http://localhost:8000/>
 
 ### Additional Info
 
