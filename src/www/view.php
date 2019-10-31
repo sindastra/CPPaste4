@@ -76,8 +76,23 @@ else
 		<title><?php echo $pasteTimeHuman; ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/style.css">
+		<!-- Internet Explorer HTML5 hack - Make it aware of the nav tag: -->
+		<!--[if IE]>
+		<script>
+			document.createElement('nav');
+		</script>
+		<![endif]-->
 	</head>
 	<body>
+		<nav role="navigation" class="nav">
+			<ul id="nav-main">
+			<?php if($conf['PrettyRewrite'] === true): ?>
+				<li><a href="//<?php echo $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] . '/raw' ?>">RAW</a></li>
+			<?php else: ?>
+				<li><a href="//<?php echo $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] . '&raw' ?>">RAW</a></li>
+			<?php endif; ?>
+			</ul>
+		</nav>
 <?php echo hilight_code( get_paste_contents($id) ); // Keep this to the left to avoid spaces ?>
 	<?php if(!empty($conf['trackingPixel'])): ?>
 		<img class="borderless" src="<?php echo $conf['trackingPixel']; ?>" height="1" width="1" border="0" alt="" />
