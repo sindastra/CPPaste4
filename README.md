@@ -19,7 +19,7 @@ Pulling from the master branch and using the contents from ```src/www``` is an o
 
 Basically, publish the contents of this repo's ```src/www``` or the contents of the release tarball to your webhost.
 
-Make sure to rename ```inc.config.sample.php``` to ```inc.config.sample.php``` and edit it accordingly.
+Make sure to rename ```inc.config.sample.php``` to ```inc.config.php``` and edit it accordingly.
 
 Make sure to rename the ```legal/*.tpl.txt``` to ```legal/*.txt``` and edit them accordingly.
 
