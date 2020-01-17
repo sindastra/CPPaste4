@@ -1,5 +1,8 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W215OZB)
 # CPPaste4
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W215OZB)
+
+![Open Issues](https://img.shields.io/github/issues/sindastra/CPPaste4)
 
 The name is derived from **CPP** (**C++**) and **Paste**! is a minimalistic web-app used to store and share code pastes. **Kind of like GitHub's Gists!**
 
