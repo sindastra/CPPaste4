@@ -72,7 +72,7 @@ See the [Wiki](https://github.com/sindastra/CPPaste4/wiki) for more info.
 
 # Legal
 
-Copyright (c) 2015 - 2019 [Sindastra](https://github.com/sindastra)
+Copyright (c) 2015 - 2020 [Sindastra](https://github.com/sindastra)
 All rights reserved.
 
 Don't forget to take a look at the [LICENSE](LICENSE.md)!
