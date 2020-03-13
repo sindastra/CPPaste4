@@ -1,5 +1,8 @@
 .DS_Store
-src/inc.config.php
+src/www/inc.config.php
+src/www/legal/contact.txt
+src/www/legal/privacy.txt
+src/www/legal/terms.txt
 toolchain/*
 snapshots/*
 src/www/pastes/*
