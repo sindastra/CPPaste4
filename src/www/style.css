@@ -44,7 +44,7 @@ code, #code {
 	width:100%;
 	height:500px;
 	height:95vh;
-	font-family:monospace;
+	font-family:"Share Tech Mono", monospace;
 	border:none;
 	outline:0;
 	tab-size:4;
@@ -56,7 +56,7 @@ code {
 }
 
 #submit {
-	font-family:monospace;
+	font-family:"Share Tech Mono", monospace;;
 	border:1px solid lime;
 	background:black;
 	color:lime;
