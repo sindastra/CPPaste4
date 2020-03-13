@@ -1,7 +1,7 @@
 /**
  * CPPaste4
  *
- * Copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
+ * Copyright (c) 2015 - 2020 Sindastra <https://github.com/sindastra>
  * All rights reserved.
  *
  * The above copyright notice and this notice shall be included in all
@@ -13,12 +13,26 @@
  * @copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
  */
 
+/* share-tech-mono-regular - latin */
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/share-tech-mono-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Share Tech Mono'), local('ShareTechMono-Regular'),
+       url('fonts/share-tech-mono-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/share-tech-mono-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/share-tech-mono-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/share-tech-mono-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/share-tech-mono-v9-latin-regular.svg#ShareTechMono') format('svg'); /* Legacy iOS */
+}
+
 body {
 	background:#020 url("scan.png");
 	background-color:#020;
 	background-image:url("scan.png");
 	color:lime;
-	font-family:monospace;
+	font-family:"Share Tech Mono", monospace;
 	caret-color:lime;
 	text-shadow:lime 0 0 6px;
 }
