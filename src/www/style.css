@@ -10,7 +10,7 @@
  * See LICENSE file for more info.
  *
  * @author Sindastra <https://github.com/sindastra>
- * @copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
+ * @copyright (c) 2015 - 2020 Sindastra <https://github.com/sindastra>
  */
 
 /* share-tech-mono-regular - latin */
@@ -114,4 +114,11 @@ textarea {
 
 .sb {
 	display: none;
+}
+
+.h-captcha {
+	position: absolute;
+	bottom:30px;
+	right:2.5%;
+	z-index:3;
 }

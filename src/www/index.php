@@ -2,7 +2,7 @@
 /**
  * CPPaste4
  *
- * Copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
+ * Copyright (c) 2015 - 2020 Sindastra <https://github.com/sindastra>
  * All rights reserved.
  *
  * The above copyright notice and this notice shall be included in all
@@ -11,7 +11,7 @@
  * See LICENSE file for more info.
  *
  * @author Sindastra <https://github.com/sindastra>
- * @copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
+ * @copyright (c) 2015 - 2020 Sindastra <https://github.com/sindastra>
  */
 
 include('confighandler.php');
@@ -24,6 +24,9 @@ include('confighandler.php');
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<?php if(!empty($conf['hCaptcha']['SiteKey']) && !empty($conf['hCaptcha']['SecretKey'])): ?>
+		<script src="https://hcaptcha.com/1/api.js" async defer></script>
+		<?php endif; ?>
 		<!-- Internet Explorer HTML5 hack - Make it aware of the nav tag: -->
 		<!--[if IE]>
 		<script>
@@ -36,6 +39,9 @@ include('confighandler.php');
 			<textarea id="code" name="code" autofocus></textarea>
 			<input type="text" name="sb" class="sb">
 			<br />
+			<?php if(!empty($conf['hCaptcha']['SiteKey']) && !empty($conf['hCaptcha']['SecretKey'])): ?>
+			<div class="h-captcha" data-sitekey="<?php echo $conf['hCaptcha']['SiteKey'] ?>" data-theme="dark"></div>
+			<?php endif; ?>
 			<button id="submit" type="submit">Paste!</button>
 		</form>
 		<nav role="navigation" class="nav">
