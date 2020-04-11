@@ -60,6 +60,10 @@ include('confighandler.php');
 				<li><a href="view.php?i=contact">Contact</a></li>
 			<?php endif; ?>
 				<li> - </li>
+			<?php if(!empty($conf['OnionSite'])): ?>
+				<li><a href="<?php echo $conf['OnionSite'] ?>">Tor</a></li>
+				<li> - </li>
+			<?php endif; ?>
 				<li><a target="_blank" href="https://sindastra.github.io/CPPaste4/">Source Code</a></li>
 			</ul>
 		</nav>

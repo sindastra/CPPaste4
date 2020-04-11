@@ -19,6 +19,7 @@
 $conf = array(
 	'PrettyRewrite' => false,
 	'trackingPixel' => '', // OPTIONAL URL to tracking pixel image
+	'OnionSite' => '', // OPTIONAL full URL to onion (Tor) version of site
 	'reCAPTCHA' => array(
 		// If no keys are specified, reCAPTCHA is not used!
 		'SiteKey' => '',
