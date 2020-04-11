@@ -9,13 +9,16 @@ The name is derived from **CPP** (**C++**) and **Paste**! is a minimalistic web-
 ### Written in pure PHP with features including but not limited to:
 
  - Honeypot to avoid spam
+ - Supports Tor (configure an onion site link to appear in the nav bar)
+ - Supports hCaptcha for advanced spam protection (might not work with onion sites)
  - Requiring no database server
  - Saving pastes as compressed files
  - No config needed (config optionally possible)
  - No PHP dependencies (only core PHP required)
- - No JavaScript
+ - No JavaScript (except for hCaptcha)
  - Easy deployment to web server
  - Wide range of browser support
+ - Full UTF-8 support including emojis!
 
 It supports all modern browsers but also a bunch of old ones, down to IE8! It also runs on IE6 but that's not officially supported... IE8 is supported for fun. But you should not be using IE8 in 2019... really. :wink:
 
