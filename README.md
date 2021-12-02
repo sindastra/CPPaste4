@@ -73,6 +73,17 @@ It's called **CPPaste4** as it's the fourth version I'm writing from scratch (ea
 
 See the [Wiki](https://github.com/sindastra/CPPaste4/wiki) for more info.
 
+#### Branch Rename
+
+The branch `master` has been renamed to `main`, if you still have an old clone, try this:
+
+```
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
 # Legal
 
 Copyright (c) 2015 - 2020 [Sindastra](https://github.com/sindastra)
