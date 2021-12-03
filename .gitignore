@@ -7,3 +7,4 @@ toolchain/*
 snapshots/*
 src/www/pastes/*
 mountpoint.conf
+/nbproject/private/
