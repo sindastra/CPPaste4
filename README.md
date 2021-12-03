@@ -89,4 +89,4 @@ git remote set-head origin -a
 Copyright (c) 2015 - 2021 [Sindastra](https://github.com/sindastra)
 All rights reserved.
 
-Don't forget to take a look at the [LICENSE](LICENSE.md)!
+Don't forget to take a look at the [LICENSE](LICENSE.txt)!
