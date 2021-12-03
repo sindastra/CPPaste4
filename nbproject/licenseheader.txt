@@ -1,0 +1,21 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}CPPaste4
+${licensePrefix}
+${licensePrefix}Copyright (c) 2015 - ${date?date?string("yyyy")} Sindastra <https://github.com/sindastra>
+${licensePrefix}All rights reserved.
+${licensePrefix}
+${licensePrefix}The above copyright notice and this notice and the following disclaimer
+${licensePrefix}shall be included in all copies or substantial portions of the Software.
+${licensePrefix}
+${licensePrefix}THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+${licensePrefix}IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+${licensePrefix}FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+${licensePrefix}AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+${licensePrefix}LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+${licensePrefix}OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+${licensePrefix}SOFTWARE.
+<#if licenseLast??>
+${licenseLast}
+</#if>
