@@ -86,7 +86,7 @@ git remote set-head origin -a
 
 # Legal
 
-Copyright (c) 2015 - 2020 [Sindastra](https://github.com/sindastra)
+Copyright (c) 2015 - 2021 [Sindastra](https://github.com/sindastra)
 All rights reserved.
 
 Don't forget to take a look at the [LICENSE](LICENSE.md)!

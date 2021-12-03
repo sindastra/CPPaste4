@@ -2,7 +2,7 @@
 /**
  * CPPaste4
  *
- * Copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+ * Copyright (c) 2015 - 2021 Sindastra <https://github.com/sindastra>
  * All rights reserved.
  *
  * The above copyright notice and this notice shall be included in all
@@ -11,7 +11,7 @@
  * See LICENSE file for more info.
  *
  * @author Sindastra <https://github.com/sindastra>
- * @copyright (c) 2015 - 2018 Sindastra <https://github.com/sindastra>
+ * @copyright (c) 2015 - 2021 Sindastra <https://github.com/sindastra>
  */
 
 if(file_exists('inc.config.php'))

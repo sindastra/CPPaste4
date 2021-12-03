@@ -1,10 +1,10 @@
 CPPaste4
 
-Copyright (c) 2015 - 2019 Sindastra <https://github.com/sindastra>
+Copyright (c) 2015 - 2021 Sindastra <https://github.com/sindastra>
 All rights reserved.
 
-The above copyright notice and this notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this notice and the following disclaimer
+shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
