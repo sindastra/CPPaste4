@@ -44,7 +44,7 @@ You might want to configure your web server to add the following headers:
 ```
 X-Content-Type-Options: nosniff
 X-Frame-Options: deny
-Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';"
+Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
 ```
 
 # Quick testing for development
