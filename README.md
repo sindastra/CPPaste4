@@ -40,11 +40,11 @@ Make sure to rename the ```legal/*.tpl.txt``` to ```legal/*.txt``` and edit them
 
 Take a look at [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/) and [HSTS Preload](https://hstspreload.org/)
 
-Apache2 VirtualHost config (append):
+You might want to configure your web server to add the following headers:
 ```
-Header always set X-Content-Type-Options: nosniff
-Header always set X-Frame-Options: deny
-Header always set Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';"
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';"
 ```
 
 # Quick testing for development
