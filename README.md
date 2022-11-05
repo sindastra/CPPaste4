@@ -36,15 +36,12 @@ Make sure to rename ```inc.config.sample.php``` to ```inc.config.php``` and edit
 
 Make sure to rename the ```legal/*.tpl.txt``` to ```legal/*.txt``` and edit them accordingly.
 
-# Note on security and Apache2 deployment
+# Note on security
 
-You'll want to set some headers and settings, make sure to always serve over HTTPS only.
+Take a look at [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/) and [HSTS Preload](https://hstspreload.org/)
 
-Apache2 VirtualHost config (append) for TLS/SSL enabled site:
+Apache2 VirtualHost config (append):
 ```
-SSLCipherSuite HIGH:!aNULL:!MD5
-SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
-Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 Header always set X-Content-Type-Options: nosniff
 Header always set X-XSS-Protection: 1
 Header always set X-Frame-Options: deny
