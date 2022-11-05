@@ -43,7 +43,6 @@ Take a look at [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.
 Apache2 VirtualHost config (append):
 ```
 Header always set X-Content-Type-Options: nosniff
-Header always set X-XSS-Protection: 1
 Header always set X-Frame-Options: deny
 Header always set Content-Security-Policy: "default-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';"
 ```
